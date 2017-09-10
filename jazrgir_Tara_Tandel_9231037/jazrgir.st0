@@ -1,0 +1,57 @@
+***** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******
+ Input File: \\mac\home\downloads\telegram desktop\jazrgir.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   tara                 HOSTNAME: TARATANDEL5573
+ lic: HOSTID: 001c4227a35e         PID:      5328
+ lic: Using FLEXlm license file:
+ lic: C:\hspice_lic\synopsys.dat
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12
+ lic: NODE LOCKED license on hostid 001c4227a35e
+ lic:
+ init: begin read circuit files,  cpu clock=  1.09E-01
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\AD\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\XILINX\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\TLINE\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\TI\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\SIGNET\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\PCI\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\LIN_TECH\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\FET\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\DIO\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\COMLINE\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\BURR_BRN\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\BJT\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\AD\
+       option post =     2.00
+       option runlvl
+       option post
+       option node
+ init: end read circuit files,  cpu clock=  2.19E-01 peak memory=        35 mb
+ init: begin check errors,  cpu clock=  2.19E-01
+ init: end check errors,  cpu clock=  2.97E-01 peak memory=        40 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  2.97E-01
+       establish matrix -- done,  cpu clock=  3.12E-01 peak memory=        40 mb
+       re-order matrix -- done,  cpu clock=  3.28E-01 peak memory=        40 mb
+ init: end setup matrix,  cpu clock=  3.43E-01 peak memory=        41 mb
+ dcop: begin dcop,  cpu clock=  3.43E-01
+ dcop: end dcop,  cpu clock=  4.06E-01 peak memory=        41 mb                tot_iter=      22
+ output: \\mac\home\downloads\telegram desktop\jazrgir.tr0
+ sweep: tran tran0    begin, stop_t=  6.40E-08 #sweeps= 641 cpu clock=  4.22E-01
+ tran: time= 8.1724E-09 tot_iter=     496 conv_iter=     156 cpu clock= 9.06E-01
+ tran: time= 1.4572E-08 tot_iter=     500 conv_iter=     158 cpu clock= 9.06E-01
+ tran: time= 1.9522E-08 tot_iter=     541 conv_iter=     169 cpu clock= 9.37E-01
+ tran: time= 2.5606E-08 tot_iter=     833 conv_iter=     252 cpu clock= 1.27E+00
+ tran: time= 3.2547E-08 tot_iter=     841 conv_iter=     255 cpu clock= 1.28E+00
+ tran: time= 3.8947E-08 tot_iter=     845 conv_iter=     257 cpu clock= 1.28E+00
+ tran: time= 4.5347E-08 tot_iter=     849 conv_iter=     259 cpu clock= 1.30E+00
+ tran: time= 5.1747E-08 tot_iter=     853 conv_iter=     261 cpu clock= 1.30E+00
+ tran: time= 5.8147E-08 tot_iter=     857 conv_iter=     263 cpu clock= 1.31E+00
+ tran: time= 6.4000E-08 tot_iter=     861 conv_iter=     265 cpu clock= 1.31E+00
+ sweep: tran tran0    end,  cpu clock=  1.33E+00 peak memory=        41 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

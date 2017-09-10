@@ -1,0 +1,107 @@
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/mahboobe/Desktop/proje elecdig/mul (3).tr0}} 1 openonly
+# PF:1
+pf:read PF:1 v(a1)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Mdi:ArrangeIcons
+Graph:Select Graph0
+Graph itemselect all add
+# Signal0
+Graph delsignal selected
+Graph:ClearItems
+Mdi:ArrangeIcons
+Graph:DSel
+pf:read PF:1 v(a2)
+# WF:1:2
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Mdi:ArrangeIcons
+pf:read PF:1 v(x0)
+# WF:1:3
+Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:1 v(x1)
+# WF:1:4
+Graph addsignal WF:1:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:1 v(x2)
+# WF:1:5
+Graph addsignal WF:1:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+GrXY:NewGraph
+# Graph1
+pf:read PF:1 v(p0)
+# WF:1:6
+Graph addsignal WF:1:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:1 v(p1)
+# WF:1:7
+Graph addsignal WF:1:7 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:1 v(p2)
+# WF:1:8
+Graph addsignal WF:1:8 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:1 v(p3)
+# WF:1:9
+Graph addsignal WF:1:9 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:1 v(p4)
+# WF:1:10
+Graph addsignal WF:1:10 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:1 v(p5)
+# WF:1:11
+Graph addsignal WF:1:11 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:1 v(p6)
+# WF:1:12
+Graph addsignal WF:1:12 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:1 v(p7)
+# WF:1:13
+Graph addsignal WF:1:13 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+pf:read PF:1 v(p8)
+# WF:1:14
+Graph addsignal WF:1:14 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal8
+pf:read PF:1 v(p9)
+# WF:1:15
+Graph addsignal WF:1:15 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal9
+Mdi:Move 339 52
+Mdi:Move 570 21
+Mdi:Move 197 -9
+wm geometry .sigmgr._PF:1 200x331+689+386
+wm geometry .sigmgr._PF:1 200x331+693+387
+wm geometry .sigmgr._PF:1 200x331+699+387
+wm geometry .sigmgr._PF:1 200x331+707+387
+wm geometry .sigmgr._PF:1 200x331+716+387
+wm geometry .sigmgr._PF:1 200x331+727+387
+wm geometry .sigmgr._PF:1 200x331+739+386
+wm geometry .sigmgr._PF:1 200x331+750+386
+wm geometry .sigmgr._PF:1 200x331+761+386
+wm geometry .sigmgr._PF:1 200x331+772+385
+wm geometry .sigmgr._PF:1 200x331+782+384
+wm geometry .sigmgr._PF:1 200x331+795+384
+wm geometry .sigmgr._PF:1 200x331+806+383
+wm geometry .sigmgr._PF:1 200x331+817+383
+wm geometry .sigmgr._PF:1 200x331+827+383
+wm geometry .sigmgr._PF:1 200x331+836+382
+wm geometry .sigmgr._PF:1 200x331+846+381
+wm geometry .sigmgr._PF:1 200x331+854+380
+wm geometry .sigmgr._PF:1 200x331+861+379
+wm geometry .sigmgr._PF:1 200x331+867+378
+wm geometry .sigmgr._PF:1 200x331+873+377
+wm geometry .sigmgr._PF:1 200x331+878+376
+wm geometry .sigmgr._PF:1 200x331+883+375
+wm geometry .sigmgr._PF:1 200x331+886+374
+wm geometry .sigmgr._PF:1 200x331+888+373
+wm geometry .sigmgr._PF:1 200x331+889+373
+wm geometry .sigmgr._PF:1 200x331+890+373
+wm geometry .sigmgr._PF:1 200x331+890+372

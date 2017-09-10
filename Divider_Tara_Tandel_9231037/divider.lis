@@ -1,0 +1,1192 @@
+ ****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: divider.sp                                                        
+  Command line options: -i divider.sp -o divider.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   tara                 HOSTNAME: TARATANDEL5573 
+  lic: HOSTID: 001c4227a35e         PID:      5608 
+  lic: Using FLEXlm license file: 
+  lic: C:\hspice_lic\synopsys.dat 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12 
+  lic: NODE LOCKED license on hostid 001c4227a35e 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_G-2012.06-SP1\meta.cfg
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ .include 'mosistsmc180.lib'
+
+  ******  circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xdivider.                       divider            1.00 
+        2 xdivider.xcell1.                cell               1.00 
+        3 xdivider.xcell2.                cell               1.00 
+        4 xdivider.xcell3.                cell               1.00 
+        5 xdivider.xcell4.                cell               1.00 
+        6 xdivider.xcell5.                cell               1.00 
+        7 xdivider.xcell6.                cell               1.00 
+        8 xdivider.xcell7.                cell               1.00 
+        9 xdivider.xcell8.                cell               1.00 
+       10 xdivider.xcell9.                cell               1.00 
+       11 xdivider.xcell10.               cell               1.00 
+       12 xdivider.xcell11.               cell               1.00 
+       13 xdivider.xcell12.               cell               1.00 
+       14 xdivider.xcell13.               cell               1.00 
+       15 xdivider.xcell14.               cell               1.00 
+       16 xdivider.xcell15.               cell               1.00 
+       17 xdivider.xcell16.               cell               1.00 
+       18 xdivider.xcell1.xxor.           xor                1.00 
+       19 xdivider.xcell1.xfa.            fa                 1.00 
+       20 xdivider.xcell2.xxor.           xor                1.00 
+       21 xdivider.xcell2.xfa.            fa                 1.00 
+       22 xdivider.xcell3.xxor.           xor                1.00 
+       23 xdivider.xcell3.xfa.            fa                 1.00 
+       24 xdivider.xcell4.xxor.           xor                1.00 
+       25 xdivider.xcell4.xfa.            fa                 1.00 
+       26 xdivider.xcell5.xxor.           xor                1.00 
+       27 xdivider.xcell5.xfa.            fa                 1.00 
+       28 xdivider.xcell6.xxor.           xor                1.00 
+       29 xdivider.xcell6.xfa.            fa                 1.00 
+       30 xdivider.xcell7.xxor.           xor                1.00 
+       31 xdivider.xcell7.xfa.            fa                 1.00 
+       32 xdivider.xcell8.xxor.           xor                1.00 
+       33 xdivider.xcell8.xfa.            fa                 1.00 
+       34 xdivider.xcell9.xxor.           xor                1.00 
+       35 xdivider.xcell9.xfa.            fa                 1.00 
+       36 xdivider.xcell10.xxor.          xor                1.00 
+       37 xdivider.xcell10.xfa.           fa                 1.00 
+       38 xdivider.xcell11.xxor.          xor                1.00 
+       39 xdivider.xcell11.xfa.           fa                 1.00 
+       40 xdivider.xcell12.xxor.          xor                1.00 
+       41 xdivider.xcell12.xfa.           fa                 1.00 
+       42 xdivider.xcell13.xxor.          xor                1.00 
+       43 xdivider.xcell13.xfa.           fa                 1.00 
+       44 xdivider.xcell14.xxor.          xor                1.00 
+       45 xdivider.xcell14.xfa.           fa                 1.00 
+       46 xdivider.xcell15.xxor.          xor                1.00 
+       47 xdivider.xcell15.xfa.           fa                 1.00 
+       48 xdivider.xcell16.xxor.          xor                1.00 
+       49 xdivider.xcell16.xfa.           fa                 1.00 
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ .include 'mosistsmc180.lib'
+
+  ******  mos   model parameters tnom=  25.000 temp=  25.000 *****
+ ***************************************************************************
+ ***        model parameters  model name:   0:nmos     model type:nmos   ***
+ ***************************************************************************
+
+   *** general parameters ***
+    deriv=   0.           
+
+   ***  level 49  model parameters  ***
+
+       hspver=    2006.03               level=         49         
+      version=        3.1            paramchk=          0         
+       apwarn=          1                lite=          0         
+       vgslim=          0             binUnit=          1         
+       capMod=          2               xpart=        0.5         
+       mobMod=          1              nqsMod=          0         
+       stiMod=          0                 elm=          5         
+     sfvtflag=          0                 tox=   4.1e-009 meter   
+           xj=     1e-007 meter       binflag=          0         
+         lmin=          0 meter          lmax=          0 meter   
+         wmin=          0 meter          wmax=          0 meter   
+         lref=          0 meter          wref=          0 meter   
+         lint=1.25702e-008 meter          wint=9.45864e-009 meter   
+        lmult=          1               wmult=          1         
+           ll=          0                 lln=          1         
+           lw=          0                 lwn=          1         
+          lwl=          0                  wl=          0         
+          wln=          1                  ww=          0         
+          wwn=          1                 wwl=          0         
+          dwg=-1.20462e-009 m/V             dwb=9.66422e-009 m/V^1/2 
+           xl=    -2e-008                  xw=    -1e-008         
+           a0=     1.9002                 ags=   0.412538 V^-1    
+           b0=-1.06835e-008 meter            b1=    -1e-007 meter   
+         keta=0.000250589 V^-1           voff= -0.0946268 V       
+        ngate=          0 cm^-3           vbx=          0 V       
+          vbm=         -3 V                xt=  1.55e-007 meter   
+         vth0=   0.383282 V               nch=2.3549e+017 cm^-3   
+         nsub=     6e+016 cm^-3           nlx=1.55647e-007 meter   
+       gamma1=          0 V^-1/2       gamma2=          0 V^-1/2  
+           k1=   0.591571 V^1/2            k2=  0.0024327         
+           k3=      0.001                 k3b=    2.88171 V^-1    
+           w0=     1e-007 meter          dvt0=    1.86718         
+         dvt1=   0.507095                dvt2= -0.0135063 V^-1    
+        dvt0w=          0 meter^-1      dvt1w=          0 meter^-1
+        dvt2w=          0 V^-1           dsub= 0.00275603         
+         eta0= 0.00137586                etab= 0.00013766 V^-1    
+           u0=    275.556 cm^2/V/sec         ua=-1.15024e-009 m/V     
+           ub=2.01415e-018 (m/V)^2          uc=4.21711e-011 V^-1    
+         vsat=     100227 m/sec            a1= 0.00043771 v^-1    
+           a2=   0.958432               delta=       0.01 V       
+         rdsw=        105 ohm-um         prwg=        0.5 V^-1    
+         prwb=       -0.2 V^-1/2           wr=          1         
+         pclm=    0.86502             pdiblc1=   0.238815         
+      pdiblc2= 0.00395731             pdiblcb=       -0.1 V^-1    
+       pscbe1=6.14039e+010 V/m          pscbe2=5.82299e-008 V/m     
+        drout=   0.728508                pvag=   0.171092         
+      nfactor=    2.37614                cdsc=    0.00024 f/m^2   
+        cdscb=          0 f/V/m^2       cdscd=          0 f/V/m^2 
+          cit=          0 f/m^2        alpha0=          0 m/V     
+        beta0=         30 V               dlc=1.25702e-008 meter   
+          dwc=9.45864e-009 meter           clc=     1e-007 meter   
+          cle=        0.6                cgso=  7.32e-010 f/m     
+         cgdo=  7.32e-010 f/m            cgbo=     1e-012 f/m     
+         cgsl=          0 f/m            cgdl=          0 f/m     
+       ckappa=        0.6                  cf=          0 f/m     
+         tnom=     300.15 K               kt1=      -0.11 V       
+         kt1l=          0                 kt2=      0.022         
+          ute=       -1.5                 ua1=  4.31e-009 m/V     
+          ub1= -7.61e-018 (m/V)^2         uc1=  -5.6e-011 m/V^2   
+           at=      33000 m/s             prt=          0         
+          using Berkeley noise model       noiMod=          1         
+         noia=     1e+020                noib=      50000         
+         noic=  -1.4e-012                  em=   4.1e+007         
+           ef=          1                  af=          1         
+           kf=          0              gdsnoi=-1.23457e-029         
+          using Hspice diodes            using ACM 
+          acm=         0                 hdif=         0 meter    
+         ldif=         0 meter             js=         0 amp/m^2  
+          jsw=         0 amp/m            xti=         0          
+            n=         1                   cj=0.000977546 f/m^2    
+           mj=  0.361111                   pb=  0.722413 V        
+         cjsw=2.24481e-010 f/m             mjsw=       0.1          
+          php=  0.722413 V               pbsw (not used)           
+       cjgate=2.24481e-010 f/m            cjswg (not used)           
+        mjswg (not used)                 pbswg (not used)           
+        lketa=-0.00947318               wketa= 0.00102998         
+        pketa= 0.00132978               pvth0= -0.0014684         
+          pk2= 0.00085306               peta0=     0.0001         
+          pu0=  -0.203478                 pua=-2.37215e-011         
+          pub=4.74506e-025               pvsat=    901.673         
+        prdsw=  -0.688879         
+ ***************************************************************************
+ ***        model parameters  model name:   0:pmos     model type:pmos   ***
+ ***************************************************************************
+
+   *** general parameters ***
+    deriv=   0.           
+
+   ***  level 49  model parameters  ***
+
+       hspver=    2006.03               level=         49         
+      version=        3.1            paramchk=          0         
+       apwarn=          1                lite=          0         
+       vgslim=          0             binUnit=          1         
+       capMod=          2               xpart=        0.5         
+       mobMod=          1              nqsMod=          0         
+       stiMod=          0                 elm=          5         
+     sfvtflag=          0                 tox=   4.1e-009 meter   
+           xj=     1e-007 meter       binflag=          0         
+         lmin=          0 meter          lmax=          0 meter   
+         wmin=          0 meter          wmax=          0 meter   
+         lref=          0 meter          wref=          0 meter   
+         lint=2.55821e-008 meter          wint=          0 meter   
+        lmult=          1               wmult=          1         
+           ll=          0                 lln=          1         
+           lw=          0                 lwn=          1         
+          lwl=          0                  wl=          0         
+          wln=          1                  ww=          0         
+          wwn=          1                 wwl=          0         
+          dwg=-2.00413e-008 m/V             dwb=1.03982e-008 m/V^1/2 
+           xl=    -2e-008                  xw=    -1e-008         
+           a0=    1.64232                 ags=   0.393488 V^-1    
+           b0=1.14955e-006 meter            b1=3.50869e-006 meter   
+         keta=  0.0146913 V^-1           voff=  -0.102545 V       
+        ngate=          0 cm^-3           vbx=          0 V       
+          vbm=         -3 V                xt=  1.55e-007 meter   
+         vth0=  -0.407799 V               nch=4.1589e+017 cm^-3   
+         nsub=     6e+016 cm^-3           nlx=7.08582e-008 meter   
+       gamma1=          0 V^-1/2       gamma2=          0 V^-1/2  
+           k1=   0.581505 V^1/2            k2=  0.0273445         
+           k3=          0                 k3b=    10.7067 V^-1    
+           w0=     1e-006 meter          dvt0=   0.542739         
+         dvt1=   0.349376                dvt2=    0.08174 V^-1    
+        dvt0w=          0 meter^-1      dvt1w=          0 meter^-1
+        dvt2w=          0 V^-1           dsub=    0.63027         
+         eta0=  0.0276906                etab= -0.0693376 V^-1    
+           u0=    116.609 cm^2/V/sec         ua=1.5639e-009 m/V     
+           ub=     1e-021 (m/V)^2          uc=    -1e-010 V^-1    
+         vsat=     182617 m/sec            a1=   0.474966 v^-1    
+           a2=    0.31182               delta=       0.01 V       
+         rdsw=    309.922 ohm-um         prwg=        0.5 V^-1    
+         prwb=       -0.5 V^-1/2           wr=          1         
+         pclm=    1.32459             pdiblc1=          0         
+      pdiblc2=  0.0136588             pdiblcb=     -0.001 V^-1    
+       pscbe1=1.00528e+010 V/m          pscbe2=2.90349e-009 V/m     
+        drout=0.000778026                pvag=    3.20271         
+      nfactor=    1.92388                cdsc=    0.00024 f/m^2   
+        cdscb=          0 f/V/m^2       cdscd=          0 f/V/m^2 
+          cit=          0 f/m^2        alpha0=          0 m/V     
+        beta0=         30 V               dlc=2.55821e-008 meter   
+          dwc=          0 meter           clc=     1e-007 meter   
+          cle=        0.6                cgso=  6.57e-010 f/m     
+         cgdo=  6.57e-010 f/m            cgbo=     1e-012 f/m     
+         cgsl=          0 f/m            cgdl=          0 f/m     
+       ckappa=        0.6                  cf=          0 f/m     
+         tnom=     300.15 K               kt1=      -0.11 V       
+         kt1l=          0                 kt2=      0.022         
+          ute=       -1.5                 ua1=  4.31e-009 m/V     
+          ub1= -7.61e-018 (m/V)^2         uc1=  -5.6e-011 m/V^2   
+           at=      33000 m/s             prt=          0         
+          using Berkeley noise model       noiMod=          1         
+         noia=   9.9e+018                noib=       2400         
+         noic=   1.4e-012                  em=   4.1e+007         
+           ef=          1                  af=          1         
+           kf=          0              gdsnoi=-1.23457e-029         
+          using Hspice diodes            using ACM 
+          acm=         0                 hdif=         0 meter    
+         ldif=         0 meter             js=         0 amp/m^2  
+          jsw=         0 amp/m            xti=         0          
+            n=         1                   cj=0.00118422 f/m^2    
+           mj=  0.413121                   pb=  0.855252 V        
+         cjsw=1.69663e-010 f/m             mjsw=  0.242466          
+          php=  0.855252 V               pbsw (not used)           
+       cjgate=1.69663e-010 f/m            cjswg (not used)           
+        mjswg (not used)                 pbswg (not used)           
+        lketa= 0.00587759               wketa= 0.00249485         
+        pketa=  0.0022305               pvth0=0.000841403         
+          pk2= 0.00147551               peta0=     0.0001         
+          pu0=   -1.84325                 pua=-6.92569e-011         
+          pub=     1e-021               pvsat=         50         
+        prdsw=    9.92224         
+  **info** (divider.sp:114) DC voltage reset to initial transient source value              in source        0:vd0                 new dc=  0.1800D+01
+  **warning** (divider.sp:115) pulse vd1 period too small, reset to   6.4020000E-08
+  **warning** (divider.sp:116) pulse vd2 period too small, reset to   6.4020000E-08
+  **warning** (divider.sp:119) pulse vz0 period too small, reset to   6.4020000E-08
+  **warning** (divider.sp:120) pulse vz1 period too small, reset to   6.4020000E-08
+  **warning** (divider.sp:123) pulse vz4 period too small, reset to   6.4020000E-08
+ 
+
+ Warning: Pd = 0 is less than Weff = 1.51083e-007.
+ Model:    0:nmos
+ Element: mn111
+ W = 1.7e-007, L = 1.6e-007
+
+  
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ .include 'mosistsmc180.lib'
+
+  ******  element node table
+                                                                                      
+ 0                vd0              vd1              vd2              vd3              
+                  vdd              vz0              vz1              vz2              
+                  vz3              vz4              vz5              vz6              
+                  18:mn111:s       18:mn111:b       18:mn221:s       18:mn221:b       
+                  18:mn2:s         18:mn2:b         18:mn4:s         18:mn4:b         
+                  19:m7:s          19:m7:b          19:m8:s          19:m8:b          
+                  19:m10:s         19:m10:b         19:m16:s         19:m16:b         
+                  19:m17:s         19:m17:b         19:m18:s         19:m18:b         
+                  19:m20:s         19:m20:b         19:m26:s         19:m26:b         
+                  19:m28:s         19:m28:b         20:mn111:s       20:mn111:b       
+                  20:mn221:s       20:mn221:b       20:mn2:s         20:mn2:b         
+                  20:mn4:s         20:mn4:b         21:m7:s          21:m7:b          
+                  21:m8:s          21:m8:b          21:m10:s         21:m10:b         
+                  21:m16:s         21:m16:b         21:m17:s         21:m17:b         
+                  21:m18:s         21:m18:b         21:m20:s         21:m20:b         
+                  21:m26:s         21:m26:b         21:m28:s         21:m28:b         
+                  22:mn111:s       22:mn111:b       22:mn221:s       22:mn221:b       
+                  22:mn2:s         22:mn2:b         22:mn4:s         22:mn4:b         
+                  23:m7:s          23:m7:b          23:m8:s          23:m8:b          
+                  23:m10:s         23:m10:b         23:m16:s         23:m16:b         
+                  23:m17:s         23:m17:b         23:m18:s         23:m18:b         
+                  23:m20:s         23:m20:b         23:m26:s         23:m26:b         
+                  23:m28:s         23:m28:b         24:mn111:s       24:mn111:b       
+                  24:mn221:s       24:mn221:b       24:mn2:s         24:mn2:b         
+                  24:mn4:s         24:mn4:b         25:m7:s          25:m7:b          
+                  25:m8:s          25:m8:b          25:m10:s         25:m10:b         
+                  25:m16:s         25:m16:b         25:m17:s         25:m17:b         
+                  25:m18:s         25:m18:b         25:m20:s         25:m20:b         
+                  25:m26:s         25:m26:b         25:m28:s         25:m28:b         
+                  26:mn111:s       26:mn111:b       26:mn221:s       26:mn221:b       
+                  26:mn2:s         26:mn2:b         26:mn4:s         26:mn4:b         
+                  27:m7:s          27:m7:b          27:m8:s          27:m8:b          
+                  27:m10:s         27:m10:b         27:m16:s         27:m16:b         
+                  27:m17:s         27:m17:b         27:m18:s         27:m18:b         
+                  27:m20:s         27:m20:b         27:m26:s         27:m26:b         
+                  27:m28:s         27:m28:b         28:mn111:s       28:mn111:b       
+                  28:mn221:s       28:mn221:b       28:mn2:s         28:mn2:b         
+                  28:mn4:s         28:mn4:b         29:m7:s          29:m7:b          
+                  29:m8:s          29:m8:b          29:m10:s         29:m10:b         
+                  29:m16:s         29:m16:b         29:m17:s         29:m17:b         
+                  29:m18:s         29:m18:b         29:m20:s         29:m20:b         
+                  29:m26:s         29:m26:b         29:m28:s         29:m28:b         
+                  30:mn111:s       30:mn111:b       30:mn221:s       30:mn221:b       
+                  30:mn2:s         30:mn2:b         30:mn4:s         30:mn4:b         
+                  31:m7:s          31:m7:b          31:m8:s          31:m8:b          
+                  31:m10:s         31:m10:b         31:m16:s         31:m16:b         
+                  31:m17:s         31:m17:b         31:m18:s         31:m18:b         
+                  31:m20:s         31:m20:b         31:m26:s         31:m26:b         
+                  31:m28:s         31:m28:b         32:mn111:s       32:mn111:b       
+                  32:mn221:s       32:mn221:b       32:mn2:s         32:mn2:b         
+                  32:mn4:s         32:mn4:b         33:m7:s          33:m7:b          
+                  33:m8:s          33:m8:b          33:m10:s         33:m10:b         
+                  33:m16:s         33:m16:b         33:m17:s         33:m17:b         
+                  33:m18:s         33:m18:b         33:m20:s         33:m20:b         
+                  33:m26:s         33:m26:b         33:m28:s         33:m28:b         
+                  34:mn111:s       34:mn111:b       34:mn221:s       34:mn221:b       
+                  34:mn2:s         34:mn2:b         34:mn4:s         34:mn4:b         
+                  35:m7:s          35:m7:b          35:m8:s          35:m8:b          
+                  35:m10:s         35:m10:b         35:m16:s         35:m16:b         
+                  35:m17:s         35:m17:b         35:m18:s         35:m18:b         
+                  35:m20:s         35:m20:b         35:m26:s         35:m26:b         
+                  35:m28:s         35:m28:b         36:mn111:s       36:mn111:b       
+                  36:mn221:s       36:mn221:b       36:mn2:s         36:mn2:b         
+                  36:mn4:s         36:mn4:b         37:m7:s          37:m7:b          
+                  37:m8:s          37:m8:b          37:m10:s         37:m10:b         
+                  37:m16:s         37:m16:b         37:m17:s         37:m17:b         
+                  37:m18:s         37:m18:b         37:m20:s         37:m20:b         
+                  37:m26:s         37:m26:b         37:m28:s         37:m28:b         
+                  38:mn111:s       38:mn111:b       38:mn221:s       38:mn221:b       
+                  38:mn2:s         38:mn2:b         38:mn4:s         38:mn4:b         
+                  39:m7:s          39:m7:b          39:m8:s          39:m8:b          
+                  39:m10:s         39:m10:b         39:m16:s         39:m16:b         
+                  39:m17:s         39:m17:b         39:m18:s         39:m18:b         
+                  39:m20:s         39:m20:b         39:m26:s         39:m26:b         
+                  39:m28:s         39:m28:b         40:mn111:s       40:mn111:b       
+                  40:mn221:s       40:mn221:b       40:mn2:s         40:mn2:b         
+                  40:mn4:s         40:mn4:b         41:m7:s          41:m7:b          
+                  41:m8:s          41:m8:b          41:m10:s         41:m10:b         
+                  41:m16:s         41:m16:b         41:m17:s         41:m17:b         
+                  41:m18:s         41:m18:b         41:m20:s         41:m20:b         
+                  41:m26:s         41:m26:b         41:m28:s         41:m28:b         
+                  42:mn111:s       42:mn111:b       42:mn221:s       42:mn221:b       
+                  42:mn2:s         42:mn2:b         42:mn4:s         42:mn4:b         
+                  43:m7:s          43:m7:b          43:m8:s          43:m8:b          
+                  43:m10:s         43:m10:b         43:m16:s         43:m16:b         
+                  43:m17:s         43:m17:b         43:m18:s         43:m18:b         
+                  43:m20:s         43:m20:b         43:m26:s         43:m26:b         
+                  43:m28:s         43:m28:b         44:mn111:s       44:mn111:b       
+                  44:mn221:s       44:mn221:b       44:mn2:s         44:mn2:b         
+                  44:mn4:s         44:mn4:b         45:m7:s          45:m7:b          
+                  45:m8:s          45:m8:b          45:m10:s         45:m10:b         
+                  45:m16:s         45:m16:b         45:m17:s         45:m17:b         
+                  45:m18:s         45:m18:b         45:m20:s         45:m20:b         
+                  45:m26:s         45:m26:b         45:m28:s         45:m28:b         
+                  46:mn111:s       46:mn111:b       46:mn221:s       46:mn221:b       
+                  46:mn2:s         46:mn2:b         46:mn4:s         46:mn4:b         
+                  47:m7:s          47:m7:b          47:m8:s          47:m8:b          
+                  47:m10:s         47:m10:b         47:m16:s         47:m16:b         
+                  47:m17:s         47:m17:b         47:m18:s         47:m18:b         
+                  47:m20:s         47:m20:b         47:m26:s         47:m26:b         
+                  47:m28:s         47:m28:b         48:mn111:s       48:mn111:b       
+                  48:mn221:s       48:mn221:b       48:mn2:s         48:mn2:b         
+                  48:mn4:s         48:mn4:b         49:m7:s          49:m7:b          
+                  49:m8:s          49:m8:b          49:m10:s         49:m10:b         
+                  49:m16:s         49:m16:b         49:m17:s         49:m17:b         
+                  49:m18:s         49:m18:b         49:m20:s         49:m20:b         
+                  49:m26:s         49:m26:b         49:m28:s         49:m28:b         
+ d0               vd0              24:mp111:g       24:mn111:g       24:mp2:g         
+                  24:mn3:g         32:mp111:g       32:mn111:g       32:mp2:g         
+                  32:mn3:g         40:mp111:g       40:mn111:g       40:mp2:g         
+                  40:mn3:g         48:mp111:g       48:mn111:g       48:mp2:g         
+                  48:mn3:g                                                            
+ d1               vd1              22:mp111:g       22:mn111:g       22:mp2:g         
+                  22:mn3:g         30:mp111:g       30:mn111:g       30:mp2:g         
+                  30:mn3:g         38:mp111:g       38:mn111:g       38:mp2:g         
+                  38:mn3:g         46:mp111:g       46:mn111:g       46:mp2:g         
+                  46:mn3:g                                                            
+ d2               vd2              20:mp111:g       20:mn111:g       20:mp2:g         
+                  20:mn3:g         28:mp111:g       28:mn111:g       28:mp2:g         
+                  28:mn3:g         36:mp111:g       36:mn111:g       36:mp2:g         
+                  36:mn3:g         44:mp111:g       44:mn111:g       44:mp2:g         
+                  44:mn3:g                                                            
+ d3               vd3              18:mp111:g       18:mn111:g       18:mp2:g         
+                  18:mn3:g         26:mp111:g       26:mn111:g       26:mp2:g         
+                  26:mn3:g         34:mp111:g       34:mn111:g       34:mp2:g         
+                  34:mn3:g         42:mp111:g       42:mn111:g       42:mp2:g         
+                  42:mn3:g                                                            
+ q0               25:m19:d         25:m20:d         26:mp221:g       26:mn221:g       
+                  26:mp4:g         26:mn4:g         27:m5:g          27:m6:g          
+                  27:m13:g         27:m18:g         27:m23:g         27:m24:g         
+                  28:mp221:g       28:mn221:g       28:mp4:g         28:mn4:g         
+                  30:mp221:g       30:mn221:g       30:mp4:g         30:mn4:g         
+                  32:mp221:g       32:mn221:g       32:mp4:g         32:mn4:g         
+ q1               33:m19:d         33:m20:d         34:mp221:g       34:mn221:g       
+                  34:mp4:g         34:mn4:g         35:m5:g          35:m6:g          
+                  35:m13:g         35:m18:g         35:m23:g         35:m24:g         
+                  36:mp221:g       36:mn221:g       36:mp4:g         36:mn4:g         
+                  38:mp221:g       38:mn221:g       38:mp4:g         38:mn4:g         
+                  40:mp221:g       40:mn221:g       40:mp4:g         40:mn4:g         
+ q2               41:m19:d         41:m20:d         42:mp221:g       42:mn221:g       
+                  42:mp4:g         42:mn4:g         43:m5:g          43:m6:g          
+                  43:m13:g         43:m18:g         43:m23:g         43:m24:g         
+                  44:mp221:g       44:mn221:g       44:mp4:g         44:mn4:g         
+                  46:mp221:g       46:mn221:g       46:mp4:g         46:mn4:g         
+                  48:mp221:g       48:mn221:g       48:mp4:g         48:mn4:g         
+ q3               49:m19:d         49:m20:d                                           
+ s0               25:m27:d         25:m28:d                                           
+ s1               33:m27:d         33:m28:d                                           
+ s2               41:m27:d         41:m28:d                                           
+ s3               49:m27:d         49:m28:d                                           
+ s4               47:m27:d         47:m28:d                                           
+ s5               45:m27:d         45:m28:d                                           
+ s6               43:m27:d         43:m28:d                                           
+ vdd              vdd              18:mp111:s       18:mp111:b       18:mp221:g       
+                  18:mp221:s       18:mp221:b       18:mn221:g       18:mp1:s         
+                  18:mp1:b         18:mp3:s         18:mp3:b         18:mp4:g         
+                  18:mn4:g         19:m1:s          19:m1:b          19:m2:s          
+                  19:m2:b          19:m3:s          19:m3:b          19:m5:g          
+                  19:m6:g          19:m11:s         19:m11:b         19:m12:s         
+                  19:m12:b         19:m13:g         19:m13:s         19:m13:b         
+                  19:m18:g         19:m19:s         19:m19:b         19:m21:s         
+                  19:m21:b         19:m23:g         19:m24:g         19:m27:s         
+                  19:m27:b         20:mp111:s       20:mp111:b       20:mp221:g       
+                  20:mp221:s       20:mp221:b       20:mn221:g       20:mp1:s         
+                  20:mp1:b         20:mp3:s         20:mp3:b         20:mp4:g         
+                  20:mn4:g         21:m1:s          21:m1:b          21:m2:s          
+                  21:m2:b          21:m3:s          21:m3:b          21:m11:s         
+                  21:m11:b         21:m12:s         21:m12:b         21:m13:s         
+                  21:m13:b         21:m19:s         21:m19:b         21:m21:s         
+                  21:m21:b         21:m27:s         21:m27:b         22:mp111:s       
+                  22:mp111:b       22:mp221:g       22:mp221:s       22:mp221:b       
+                  22:mn221:g       22:mp1:s         22:mp1:b         22:mp3:s         
+                  22:mp3:b         22:mp4:g         22:mn4:g         23:m1:s          
+                  23:m1:b          23:m2:s          23:m2:b          23:m3:s          
+                  23:m3:b          23:m11:s         23:m11:b         23:m12:s         
+                  23:m12:b         23:m13:s         23:m13:b         23:m19:s         
+                  23:m19:b         23:m21:s         23:m21:b         23:m27:s         
+                  23:m27:b         24:mp111:s       24:mp111:b       24:mp221:g       
+                  24:mp221:s       24:mp221:b       24:mn221:g       24:mp1:s         
+                  24:mp1:b         24:mp3:s         24:mp3:b         24:mp4:g         
+                  24:mn4:g         25:m1:s          25:m1:b          25:m2:s          
+                  25:m2:b          25:m3:s          25:m3:b          25:m11:s         
+                  25:m11:b         25:m12:s         25:m12:b         25:m13:s         
+                  25:m13:b         25:m19:s         25:m19:b         25:m21:s         
+                  25:m21:b         25:m27:s         25:m27:b         26:mp111:s       
+                  26:mp111:b       26:mp221:s       26:mp221:b       26:mp1:s         
+                  26:mp1:b         26:mp3:s         26:mp3:b         27:m1:s          
+                  27:m1:b          27:m2:s          27:m2:b          27:m3:s          
+                  27:m3:b          27:m11:s         27:m11:b         27:m12:s         
+                  27:m12:b         27:m13:s         27:m13:b         27:m19:s         
+                  27:m19:b         27:m21:s         27:m21:b         27:m27:s         
+                  27:m27:b         28:mp111:s       28:mp111:b       28:mp221:s       
+                  28:mp221:b       28:mp1:s         28:mp1:b         28:mp3:s         
+                  28:mp3:b         29:m1:s          29:m1:b          29:m2:s          
+                  29:m2:b          29:m3:s          29:m3:b          29:m11:s         
+                  29:m11:b         29:m12:s         29:m12:b         29:m13:s         
+                  29:m13:b         29:m19:s         29:m19:b         29:m21:s         
+                  29:m21:b         29:m27:s         29:m27:b         30:mp111:s       
+                  30:mp111:b       30:mp221:s       30:mp221:b       30:mp1:s         
+                  30:mp1:b         30:mp3:s         30:mp3:b         31:m1:s          
+                  31:m1:b          31:m2:s          31:m2:b          31:m3:s          
+                  31:m3:b          31:m11:s         31:m11:b         31:m12:s         
+                  31:m12:b         31:m13:s         31:m13:b         31:m19:s         
+                  31:m19:b         31:m21:s         31:m21:b         31:m27:s         
+                  31:m27:b         32:mp111:s       32:mp111:b       32:mp221:s       
+                  32:mp221:b       32:mp1:s         32:mp1:b         32:mp3:s         
+                  32:mp3:b         33:m1:s          33:m1:b          33:m2:s          
+                  33:m2:b          33:m3:s          33:m3:b          33:m11:s         
+                  33:m11:b         33:m12:s         33:m12:b         33:m13:s         
+                  33:m13:b         33:m19:s         33:m19:b         33:m21:s         
+                  33:m21:b         33:m27:s         33:m27:b         34:mp111:s       
+                  34:mp111:b       34:mp221:s       34:mp221:b       34:mp1:s         
+                  34:mp1:b         34:mp3:s         34:mp3:b         35:m1:s          
+                  35:m1:b          35:m2:s          35:m2:b          35:m3:s          
+                  35:m3:b          35:m11:s         35:m11:b         35:m12:s         
+                  35:m12:b         35:m13:s         35:m13:b         35:m19:s         
+                  35:m19:b         35:m21:s         35:m21:b         35:m27:s         
+                  35:m27:b         36:mp111:s       36:mp111:b       36:mp221:s       
+                  36:mp221:b       36:mp1:s         36:mp1:b         36:mp3:s         
+                  36:mp3:b         37:m1:s          37:m1:b          37:m2:s          
+                  37:m2:b          37:m3:s          37:m3:b          37:m11:s         
+                  37:m11:b         37:m12:s         37:m12:b         37:m13:s         
+                  37:m13:b         37:m19:s         37:m19:b         37:m21:s         
+                  37:m21:b         37:m27:s         37:m27:b         38:mp111:s       
+                  38:mp111:b       38:mp221:s       38:mp221:b       38:mp1:s         
+                  38:mp1:b         38:mp3:s         38:mp3:b         39:m1:s          
+                  39:m1:b          39:m2:s          39:m2:b          39:m3:s          
+                  39:m3:b          39:m11:s         39:m11:b         39:m12:s         
+                  39:m12:b         39:m13:s         39:m13:b         39:m19:s         
+                  39:m19:b         39:m21:s         39:m21:b         39:m27:s         
+                  39:m27:b         40:mp111:s       40:mp111:b       40:mp221:s       
+                  40:mp221:b       40:mp1:s         40:mp1:b         40:mp3:s         
+                  40:mp3:b         41:m1:s          41:m1:b          41:m2:s          
+                  41:m2:b          41:m3:s          41:m3:b          41:m11:s         
+                  41:m11:b         41:m12:s         41:m12:b         41:m13:s         
+                  41:m13:b         41:m19:s         41:m19:b         41:m21:s         
+                  41:m21:b         41:m27:s         41:m27:b         42:mp111:s       
+                  42:mp111:b       42:mp221:s       42:mp221:b       42:mp1:s         
+                  42:mp1:b         42:mp3:s         42:mp3:b         43:m1:s          
+                  43:m1:b          43:m2:s          43:m2:b          43:m3:s          
+                  43:m3:b          43:m11:s         43:m11:b         43:m12:s         
+                  43:m12:b         43:m13:s         43:m13:b         43:m19:s         
+                  43:m19:b         43:m21:s         43:m21:b         43:m27:s         
+                  43:m27:b         44:mp111:s       44:mp111:b       44:mp221:s       
+                  44:mp221:b       44:mp1:s         44:mp1:b         44:mp3:s         
+                  44:mp3:b         45:m1:s          45:m1:b          45:m2:s          
+                  45:m2:b          45:m3:s          45:m3:b          45:m11:s         
+                  45:m11:b         45:m12:s         45:m12:b         45:m13:s         
+                  45:m13:b         45:m19:s         45:m19:b         45:m21:s         
+                  45:m21:b         45:m27:s         45:m27:b         46:mp111:s       
+                  46:mp111:b       46:mp221:s       46:mp221:b       46:mp1:s         
+                  46:mp1:b         46:mp3:s         46:mp3:b         47:m1:s          
+                  47:m1:b          47:m2:s          47:m2:b          47:m3:s          
+                  47:m3:b          47:m11:s         47:m11:b         47:m12:s         
+                  47:m12:b         47:m13:s         47:m13:b         47:m19:s         
+                  47:m19:b         47:m21:s         47:m21:b         47:m27:s         
+                  47:m27:b         48:mp111:s       48:mp111:b       48:mp221:s       
+                  48:mp221:b       48:mp1:s         48:mp1:b         48:mp3:s         
+                  48:mp3:b         49:m1:s          49:m1:b          49:m2:s          
+                  49:m2:b          49:m3:s          49:m3:b          49:m11:s         
+                  49:m11:b         49:m12:s         49:m12:b         49:m13:s         
+                  49:m13:b         49:m19:s         49:m19:b         49:m21:s         
+                  49:m21:b         49:m27:s         49:m27:b                          
+ z0               vz0              25:m2:g          25:m3:g          25:m8:g          
+                  25:m10:g         25:m12:g         25:m17:g         25:m22:g         
+                  25:m26:g                                                            
+ z1               vz1              23:m2:g          23:m3:g          23:m8:g          
+                  23:m10:g         23:m12:g         23:m17:g         23:m22:g         
+                  23:m26:g                                                            
+ z2               vz2              21:m2:g          21:m3:g          21:m8:g          
+                  21:m10:g         21:m12:g         21:m17:g         21:m22:g         
+                  21:m26:g                                                            
+ z3               vz3              19:m2:g          19:m3:g          19:m8:g          
+                  19:m10:g         19:m12:g         19:m17:g         19:m22:g         
+                  19:m26:g                                                            
+ z4               vz4              27:m2:g          27:m3:g          27:m8:g          
+                  27:m10:g         27:m12:g         27:m17:g         27:m22:g         
+                  27:m26:g                                                            
+ z5               vz5              35:m2:g          35:m3:g          35:m8:g          
+                  35:m10:g         35:m12:g         35:m17:g         35:m22:g         
+                  35:m26:g                                                            
+ z6               vz6              43:m2:g          43:m3:g          43:m8:g          
+                  43:m10:g         43:m12:g         43:m17:g         43:m22:g         
+                  43:m26:g                                                            
+ xdivider.m1      19:m27:d         19:m28:d         29:m2:g          29:m3:g          
+                  29:m8:g          29:m10:g         29:m12:g         29:m17:g         
+                  29:m22:g         29:m26:g                                           
+ xdivider.m2      21:m27:d         21:m28:d         31:m2:g          31:m3:g          
+                  31:m8:g          31:m10:g         31:m12:g         31:m17:g         
+                  31:m22:g         31:m26:g                                           
+ xdivider.m3      23:m27:d         23:m28:d         33:m2:g          33:m3:g          
+                  33:m8:g          33:m10:g         33:m12:g         33:m17:g         
+                  33:m22:g         33:m26:g                                           
+ xdivider.m4      27:m27:d         27:m28:d         37:m2:g          37:m3:g          
+                  37:m8:g          37:m10:g         37:m12:g         37:m17:g         
+                  37:m22:g         37:m26:g                                           
+ xdivider.m5      29:m27:d         29:m28:d         39:m2:g          39:m3:g          
+                  39:m8:g          39:m10:g         39:m12:g         39:m17:g         
+                  39:m22:g         39:m26:g                                           
+ xdivider.m6      31:m27:d         31:m28:d         41:m2:g          41:m3:g          
+                  41:m8:g          41:m10:g         41:m12:g         41:m17:g         
+                  41:m22:g         41:m26:g                                           
+ xdivider.m7      35:m27:d         35:m28:d         45:m2:g          45:m3:g          
+                  45:m8:g          45:m10:g         45:m12:g         45:m17:g         
+                  45:m22:g         45:m26:g                                           
+ xdivider.m8      37:m27:d         37:m28:d         47:m2:g          47:m3:g          
+                  47:m8:g          47:m10:g         47:m12:g         47:m17:g         
+                  47:m22:g         47:m26:g                                           
+ xdivider.m9      39:m27:d         39:m28:d         49:m2:g          49:m3:g          
+                  49:m8:g          49:m10:g         49:m12:g         49:m17:g         
+                  49:m22:g         49:m26:g                                           
+ xdivider.n1      19:m19:d         19:m20:d         21:m5:g          21:m6:g          
+                  21:m13:g         21:m18:g         21:m23:g         21:m24:g         
+ xdivider.n10     43:m19:d         43:m20:d         45:m5:g          45:m6:g          
+                  45:m13:g         45:m18:g         45:m23:g         45:m24:g         
+ xdivider.n11     45:m19:d         45:m20:d         47:m5:g          47:m6:g          
+                  47:m13:g         47:m18:g         47:m23:g         47:m24:g         
+ xdivider.n12     47:m19:d         47:m20:d         49:m5:g          49:m6:g          
+                  49:m13:g         49:m18:g         49:m23:g         49:m24:g         
+ xdivider.n2      21:m19:d         21:m20:d         23:m5:g          23:m6:g          
+                  23:m13:g         23:m18:g         23:m23:g         23:m24:g         
+ xdivider.n3      23:m19:d         23:m20:d         25:m5:g          25:m6:g          
+                  25:m13:g         25:m18:g         25:m23:g         25:m24:g         
+ xdivider.n4      27:m19:d         27:m20:d         29:m5:g          29:m6:g          
+                  29:m13:g         29:m18:g         29:m23:g         29:m24:g         
+ xdivider.n5      29:m19:d         29:m20:d         31:m5:g          31:m6:g          
+                  31:m13:g         31:m18:g         31:m23:g         31:m24:g         
+ xdivider.n6      31:m19:d         31:m20:d         33:m5:g          33:m6:g          
+                  33:m13:g         33:m18:g         33:m23:g         33:m24:g         
+ xdivider.n7      35:m19:d         35:m20:d         37:m5:g          37:m6:g          
+                  37:m13:g         37:m18:g         37:m23:g         37:m24:g         
+ xdivider.n8      37:m19:d         37:m20:d         39:m5:g          39:m6:g          
+                  39:m13:g         39:m18:g         39:m23:g         39:m24:g         
+ xdivider.n9      39:m19:d         39:m20:d         41:m5:g          41:m6:g          
+                  41:m13:g         41:m18:g         41:m23:g         41:m24:g         
+ 2:out1           18:mp2:d         18:mp4:d         18:mn1:d         18:mn3:d         
+                  19:m1:g          19:m4:g          19:m7:g          19:m9:g          
+                  19:m11:g         19:m16:g         19:m21:g         19:m25:g         
+ 3:out1           20:mp2:d         20:mp4:d         20:mn1:d         20:mn3:d         
+                  21:m1:g          21:m4:g          21:m7:g          21:m9:g          
+                  21:m11:g         21:m16:g         21:m21:g         21:m25:g         
+ 4:out1           22:mp2:d         22:mp4:d         22:mn1:d         22:mn3:d         
+                  23:m1:g          23:m4:g          23:m7:g          23:m9:g          
+                  23:m11:g         23:m16:g         23:m21:g         23:m25:g         
+ 5:out1           24:mp2:d         24:mp4:d         24:mn1:d         24:mn3:d         
+                  25:m1:g          25:m4:g          25:m7:g          25:m9:g          
+                  25:m11:g         25:m16:g         25:m21:g         25:m25:g         
+ 6:out1           26:mp2:d         26:mp4:d         26:mn1:d         26:mn3:d         
+                  27:m1:g          27:m4:g          27:m7:g          27:m9:g          
+                  27:m11:g         27:m16:g         27:m21:g         27:m25:g         
+ 7:out1           28:mp2:d         28:mp4:d         28:mn1:d         28:mn3:d         
+                  29:m1:g          29:m4:g          29:m7:g          29:m9:g          
+                  29:m11:g         29:m16:g         29:m21:g         29:m25:g         
+ 8:out1           30:mp2:d         30:mp4:d         30:mn1:d         30:mn3:d         
+                  31:m1:g          31:m4:g          31:m7:g          31:m9:g          
+                  31:m11:g         31:m16:g         31:m21:g         31:m25:g         
+ 9:out1           32:mp2:d         32:mp4:d         32:mn1:d         32:mn3:d         
+                  33:m1:g          33:m4:g          33:m7:g          33:m9:g          
+                  33:m11:g         33:m16:g         33:m21:g         33:m25:g         
+ 10:out1          34:mp2:d         34:mp4:d         34:mn1:d         34:mn3:d         
+                  35:m1:g          35:m4:g          35:m7:g          35:m9:g          
+                  35:m11:g         35:m16:g         35:m21:g         35:m25:g         
+ 11:out1          36:mp2:d         36:mp4:d         36:mn1:d         36:mn3:d         
+                  37:m1:g          37:m4:g          37:m7:g          37:m9:g          
+                  37:m11:g         37:m16:g         37:m21:g         37:m25:g         
+ 12:out1          38:mp2:d         38:mp4:d         38:mn1:d         38:mn3:d         
+                  39:m1:g          39:m4:g          39:m7:g          39:m9:g          
+                  39:m11:g         39:m16:g         39:m21:g         39:m25:g         
+ 13:out1          40:mp2:d         40:mp4:d         40:mn1:d         40:mn3:d         
+                  41:m1:g          41:m4:g          41:m7:g          41:m9:g          
+                  41:m11:g         41:m16:g         41:m21:g         41:m25:g         
+ 14:out1          42:mp2:d         42:mp4:d         42:mn1:d         42:mn3:d         
+                  43:m1:g          43:m4:g          43:m7:g          43:m9:g          
+                  43:m11:g         43:m16:g         43:m21:g         43:m25:g         
+ 15:out1          44:mp2:d         44:mp4:d         44:mn1:d         44:mn3:d         
+                  45:m1:g          45:m4:g          45:m7:g          45:m9:g          
+                  45:m11:g         45:m16:g         45:m21:g         45:m25:g         
+ 16:out1          46:mp2:d         46:mp4:d         46:mn1:d         46:mn3:d         
+                  47:m1:g          47:m4:g          47:m7:g          47:m9:g          
+                  47:m11:g         47:m16:g         47:m21:g         47:m25:g         
+ 17:out1          48:mp2:d         48:mp4:d         48:mn1:d         48:mn3:d         
+                  49:m1:g          49:m4:g          49:m7:g          49:m9:g          
+                  49:m11:g         49:m16:g         49:m21:g         49:m25:g         
+ 18:a!            18:mp221:d       18:mn221:d       18:mp1:g         18:mn1:g         
+ 18:b!            18:mp111:d       18:mn111:d       18:mp3:g         18:mn2:g         
+ 18:f1            18:mp1:d         18:mp2:s         18:mp2:b                          
+ 18:f2            18:mp3:d         18:mp4:s         18:mp4:b                          
+ 18:f3            18:mn1:s         18:mn1:b         18:mn2:d         18:mn3:s         
+                  18:mn3:b         18:mn4:d                                           
+ 19:co!           19:m4:d          19:m5:d          19:m6:d          19:m9:d          
+                  19:m14:g         19:m15:g         19:m19:g         19:m20:g         
+ 19:s!            19:m14:d         19:m15:d         19:m23:d         19:m24:d         
+                  19:m27:g         19:m28:g                                           
+ 19:x1            19:m1:d          19:m2:d          19:m5:s          19:m5:b          
+ 19:x10           19:m25:s         19:m25:b         19:m26:d                          
+ 19:x2            19:m6:s          19:m6:b          19:m7:d          19:m8:d          
+ 19:x3            19:m3:d          19:m4:s          19:m4:b                           
+ 19:x4            19:m9:s          19:m9:b          19:m10:d                          
+ 19:x5            19:m11:d         19:m12:d         19:m13:d         19:m14:s         
+                  19:m14:b                                                            
+ 19:x6            19:m15:s         19:m15:b         19:m16:d         19:m17:d         
+                  19:m18:d                                                            
+ 19:x7            19:m21:d         19:m22:s         19:m22:b                          
+ 19:x8            19:m22:d         19:m23:s         19:m23:b                          
+ 19:x9            19:m24:s         19:m24:b         19:m25:d                          
+ 20:a!            20:mp221:d       20:mn221:d       20:mp1:g         20:mn1:g         
+ 20:b!            20:mp111:d       20:mn111:d       20:mp3:g         20:mn2:g         
+ 20:f1            20:mp1:d         20:mp2:s         20:mp2:b                          
+ 20:f2            20:mp3:d         20:mp4:s         20:mp4:b                          
+ 20:f3            20:mn1:s         20:mn1:b         20:mn2:d         20:mn3:s         
+                  20:mn3:b         20:mn4:d                                           
+ 21:co!           21:m4:d          21:m5:d          21:m6:d          21:m9:d          
+                  21:m14:g         21:m15:g         21:m19:g         21:m20:g         
+ 21:s!            21:m14:d         21:m15:d         21:m23:d         21:m24:d         
+                  21:m27:g         21:m28:g                                           
+ 21:x1            21:m1:d          21:m2:d          21:m5:s          21:m5:b          
+ 21:x10           21:m25:s         21:m25:b         21:m26:d                          
+ 21:x2            21:m6:s          21:m6:b          21:m7:d          21:m8:d          
+ 21:x3            21:m3:d          21:m4:s          21:m4:b                           
+ 21:x4            21:m9:s          21:m9:b          21:m10:d                          
+ 21:x5            21:m11:d         21:m12:d         21:m13:d         21:m14:s         
+                  21:m14:b                                                            
+ 21:x6            21:m15:s         21:m15:b         21:m16:d         21:m17:d         
+                  21:m18:d                                                            
+ 21:x7            21:m21:d         21:m22:s         21:m22:b                          
+ 21:x8            21:m22:d         21:m23:s         21:m23:b                          
+ 21:x9            21:m24:s         21:m24:b         21:m25:d                          
+ 22:a!            22:mp221:d       22:mn221:d       22:mp1:g         22:mn1:g         
+ 22:b!            22:mp111:d       22:mn111:d       22:mp3:g         22:mn2:g         
+ 22:f1            22:mp1:d         22:mp2:s         22:mp2:b                          
+ 22:f2            22:mp3:d         22:mp4:s         22:mp4:b                          
+ 22:f3            22:mn1:s         22:mn1:b         22:mn2:d         22:mn3:s         
+                  22:mn3:b         22:mn4:d                                           
+ 23:co!           23:m4:d          23:m5:d          23:m6:d          23:m9:d          
+                  23:m14:g         23:m15:g         23:m19:g         23:m20:g         
+ 23:s!            23:m14:d         23:m15:d         23:m23:d         23:m24:d         
+                  23:m27:g         23:m28:g                                           
+ 23:x1            23:m1:d          23:m2:d          23:m5:s          23:m5:b          
+ 23:x10           23:m25:s         23:m25:b         23:m26:d                          
+ 23:x2            23:m6:s          23:m6:b          23:m7:d          23:m8:d          
+ 23:x3            23:m3:d          23:m4:s          23:m4:b                           
+ 23:x4            23:m9:s          23:m9:b          23:m10:d                          
+ 23:x5            23:m11:d         23:m12:d         23:m13:d         23:m14:s         
+                  23:m14:b                                                            
+ 23:x6            23:m15:s         23:m15:b         23:m16:d         23:m17:d         
+                  23:m18:d                                                            
+ 23:x7            23:m21:d         23:m22:s         23:m22:b                          
+ 23:x8            23:m22:d         23:m23:s         23:m23:b                          
+ 23:x9            23:m24:s         23:m24:b         23:m25:d                          
+ 24:a!            24:mp221:d       24:mn221:d       24:mp1:g         24:mn1:g         
+ 24:b!            24:mp111:d       24:mn111:d       24:mp3:g         24:mn2:g         
+ 24:f1            24:mp1:d         24:mp2:s         24:mp2:b                          
+ 24:f2            24:mp3:d         24:mp4:s         24:mp4:b                          
+ 24:f3            24:mn1:s         24:mn1:b         24:mn2:d         24:mn3:s         
+                  24:mn3:b         24:mn4:d                                           
+ 25:co!           25:m4:d          25:m5:d          25:m6:d          25:m9:d          
+                  25:m14:g         25:m15:g         25:m19:g         25:m20:g         
+ 25:s!            25:m14:d         25:m15:d         25:m23:d         25:m24:d         
+                  25:m27:g         25:m28:g                                           
+ 25:x1            25:m1:d          25:m2:d          25:m5:s          25:m5:b          
+ 25:x10           25:m25:s         25:m25:b         25:m26:d                          
+ 25:x2            25:m6:s          25:m6:b          25:m7:d          25:m8:d          
+ 25:x3            25:m3:d          25:m4:s          25:m4:b                           
+ 25:x4            25:m9:s          25:m9:b          25:m10:d                          
+ 25:x5            25:m11:d         25:m12:d         25:m13:d         25:m14:s         
+                  25:m14:b                                                            
+ 25:x6            25:m15:s         25:m15:b         25:m16:d         25:m17:d         
+                  25:m18:d                                                            
+ 25:x7            25:m21:d         25:m22:s         25:m22:b                          
+ 25:x8            25:m22:d         25:m23:s         25:m23:b                          
+ 25:x9            25:m24:s         25:m24:b         25:m25:d                          
+ 26:a!            26:mp221:d       26:mn221:d       26:mp1:g         26:mn1:g         
+ 26:b!            26:mp111:d       26:mn111:d       26:mp3:g         26:mn2:g         
+ 26:f1            26:mp1:d         26:mp2:s         26:mp2:b                          
+ 26:f2            26:mp3:d         26:mp4:s         26:mp4:b                          
+ 26:f3            26:mn1:s         26:mn1:b         26:mn2:d         26:mn3:s         
+                  26:mn3:b         26:mn4:d                                           
+ 27:co!           27:m4:d          27:m5:d          27:m6:d          27:m9:d          
+                  27:m14:g         27:m15:g         27:m19:g         27:m20:g         
+ 27:s!            27:m14:d         27:m15:d         27:m23:d         27:m24:d         
+                  27:m27:g         27:m28:g                                           
+ 27:x1            27:m1:d          27:m2:d          27:m5:s          27:m5:b          
+ 27:x10           27:m25:s         27:m25:b         27:m26:d                          
+ 27:x2            27:m6:s          27:m6:b          27:m7:d          27:m8:d          
+ 27:x3            27:m3:d          27:m4:s          27:m4:b                           
+ 27:x4            27:m9:s          27:m9:b          27:m10:d                          
+ 27:x5            27:m11:d         27:m12:d         27:m13:d         27:m14:s         
+                  27:m14:b                                                            
+ 27:x6            27:m15:s         27:m15:b         27:m16:d         27:m17:d         
+                  27:m18:d                                                            
+ 27:x7            27:m21:d         27:m22:s         27:m22:b                          
+ 27:x8            27:m22:d         27:m23:s         27:m23:b                          
+ 27:x9            27:m24:s         27:m24:b         27:m25:d                          
+ 28:a!            28:mp221:d       28:mn221:d       28:mp1:g         28:mn1:g         
+ 28:b!            28:mp111:d       28:mn111:d       28:mp3:g         28:mn2:g         
+ 28:f1            28:mp1:d         28:mp2:s         28:mp2:b                          
+ 28:f2            28:mp3:d         28:mp4:s         28:mp4:b                          
+ 28:f3            28:mn1:s         28:mn1:b         28:mn2:d         28:mn3:s         
+                  28:mn3:b         28:mn4:d                                           
+ 29:co!           29:m4:d          29:m5:d          29:m6:d          29:m9:d          
+                  29:m14:g         29:m15:g         29:m19:g         29:m20:g         
+ 29:s!            29:m14:d         29:m15:d         29:m23:d         29:m24:d         
+                  29:m27:g         29:m28:g                                           
+ 29:x1            29:m1:d          29:m2:d          29:m5:s          29:m5:b          
+ 29:x10           29:m25:s         29:m25:b         29:m26:d                          
+ 29:x2            29:m6:s          29:m6:b          29:m7:d          29:m8:d          
+ 29:x3            29:m3:d          29:m4:s          29:m4:b                           
+ 29:x4            29:m9:s          29:m9:b          29:m10:d                          
+ 29:x5            29:m11:d         29:m12:d         29:m13:d         29:m14:s         
+                  29:m14:b                                                            
+ 29:x6            29:m15:s         29:m15:b         29:m16:d         29:m17:d         
+                  29:m18:d                                                            
+ 29:x7            29:m21:d         29:m22:s         29:m22:b                          
+ 29:x8            29:m22:d         29:m23:s         29:m23:b                          
+ 29:x9            29:m24:s         29:m24:b         29:m25:d                          
+ 30:a!            30:mp221:d       30:mn221:d       30:mp1:g         30:mn1:g         
+ 30:b!            30:mp111:d       30:mn111:d       30:mp3:g         30:mn2:g         
+ 30:f1            30:mp1:d         30:mp2:s         30:mp2:b                          
+ 30:f2            30:mp3:d         30:mp4:s         30:mp4:b                          
+ 30:f3            30:mn1:s         30:mn1:b         30:mn2:d         30:mn3:s         
+                  30:mn3:b         30:mn4:d                                           
+ 31:co!           31:m4:d          31:m5:d          31:m6:d          31:m9:d          
+                  31:m14:g         31:m15:g         31:m19:g         31:m20:g         
+ 31:s!            31:m14:d         31:m15:d         31:m23:d         31:m24:d         
+                  31:m27:g         31:m28:g                                           
+ 31:x1            31:m1:d          31:m2:d          31:m5:s          31:m5:b          
+ 31:x10           31:m25:s         31:m25:b         31:m26:d                          
+ 31:x2            31:m6:s          31:m6:b          31:m7:d          31:m8:d          
+ 31:x3            31:m3:d          31:m4:s          31:m4:b                           
+ 31:x4            31:m9:s          31:m9:b          31:m10:d                          
+ 31:x5            31:m11:d         31:m12:d         31:m13:d         31:m14:s         
+                  31:m14:b                                                            
+ 31:x6            31:m15:s         31:m15:b         31:m16:d         31:m17:d         
+                  31:m18:d                                                            
+ 31:x7            31:m21:d         31:m22:s         31:m22:b                          
+ 31:x8            31:m22:d         31:m23:s         31:m23:b                          
+ 31:x9            31:m24:s         31:m24:b         31:m25:d                          
+ 32:a!            32:mp221:d       32:mn221:d       32:mp1:g         32:mn1:g         
+ 32:b!            32:mp111:d       32:mn111:d       32:mp3:g         32:mn2:g         
+ 32:f1            32:mp1:d         32:mp2:s         32:mp2:b                          
+ 32:f2            32:mp3:d         32:mp4:s         32:mp4:b                          
+ 32:f3            32:mn1:s         32:mn1:b         32:mn2:d         32:mn3:s         
+                  32:mn3:b         32:mn4:d                                           
+ 33:co!           33:m4:d          33:m5:d          33:m6:d          33:m9:d          
+                  33:m14:g         33:m15:g         33:m19:g         33:m20:g         
+ 33:s!            33:m14:d         33:m15:d         33:m23:d         33:m24:d         
+                  33:m27:g         33:m28:g                                           
+ 33:x1            33:m1:d          33:m2:d          33:m5:s          33:m5:b          
+ 33:x10           33:m25:s         33:m25:b         33:m26:d                          
+ 33:x2            33:m6:s          33:m6:b          33:m7:d          33:m8:d          
+ 33:x3            33:m3:d          33:m4:s          33:m4:b                           
+ 33:x4            33:m9:s          33:m9:b          33:m10:d                          
+ 33:x5            33:m11:d         33:m12:d         33:m13:d         33:m14:s         
+                  33:m14:b                                                            
+ 33:x6            33:m15:s         33:m15:b         33:m16:d         33:m17:d         
+                  33:m18:d                                                            
+ 33:x7            33:m21:d         33:m22:s         33:m22:b                          
+ 33:x8            33:m22:d         33:m23:s         33:m23:b                          
+ 33:x9            33:m24:s         33:m24:b         33:m25:d                          
+ 34:a!            34:mp221:d       34:mn221:d       34:mp1:g         34:mn1:g         
+ 34:b!            34:mp111:d       34:mn111:d       34:mp3:g         34:mn2:g         
+ 34:f1            34:mp1:d         34:mp2:s         34:mp2:b                          
+ 34:f2            34:mp3:d         34:mp4:s         34:mp4:b                          
+ 34:f3            34:mn1:s         34:mn1:b         34:mn2:d         34:mn3:s         
+                  34:mn3:b         34:mn4:d                                           
+ 35:co!           35:m4:d          35:m5:d          35:m6:d          35:m9:d          
+                  35:m14:g         35:m15:g         35:m19:g         35:m20:g         
+ 35:s!            35:m14:d         35:m15:d         35:m23:d         35:m24:d         
+                  35:m27:g         35:m28:g                                           
+ 35:x1            35:m1:d          35:m2:d          35:m5:s          35:m5:b          
+ 35:x10           35:m25:s         35:m25:b         35:m26:d                          
+ 35:x2            35:m6:s          35:m6:b          35:m7:d          35:m8:d          
+ 35:x3            35:m3:d          35:m4:s          35:m4:b                           
+ 35:x4            35:m9:s          35:m9:b          35:m10:d                          
+ 35:x5            35:m11:d         35:m12:d         35:m13:d         35:m14:s         
+                  35:m14:b                                                            
+ 35:x6            35:m15:s         35:m15:b         35:m16:d         35:m17:d         
+                  35:m18:d                                                            
+ 35:x7            35:m21:d         35:m22:s         35:m22:b                          
+ 35:x8            35:m22:d         35:m23:s         35:m23:b                          
+ 35:x9            35:m24:s         35:m24:b         35:m25:d                          
+ 36:a!            36:mp221:d       36:mn221:d       36:mp1:g         36:mn1:g         
+ 36:b!            36:mp111:d       36:mn111:d       36:mp3:g         36:mn2:g         
+ 36:f1            36:mp1:d         36:mp2:s         36:mp2:b                          
+ 36:f2            36:mp3:d         36:mp4:s         36:mp4:b                          
+ 36:f3            36:mn1:s         36:mn1:b         36:mn2:d         36:mn3:s         
+                  36:mn3:b         36:mn4:d                                           
+ 37:co!           37:m4:d          37:m5:d          37:m6:d          37:m9:d          
+                  37:m14:g         37:m15:g         37:m19:g         37:m20:g         
+ 37:s!            37:m14:d         37:m15:d         37:m23:d         37:m24:d         
+                  37:m27:g         37:m28:g                                           
+ 37:x1            37:m1:d          37:m2:d          37:m5:s          37:m5:b          
+ 37:x10           37:m25:s         37:m25:b         37:m26:d                          
+ 37:x2            37:m6:s          37:m6:b          37:m7:d          37:m8:d          
+ 37:x3            37:m3:d          37:m4:s          37:m4:b                           
+ 37:x4            37:m9:s          37:m9:b          37:m10:d                          
+ 37:x5            37:m11:d         37:m12:d         37:m13:d         37:m14:s         
+                  37:m14:b                                                            
+ 37:x6            37:m15:s         37:m15:b         37:m16:d         37:m17:d         
+                  37:m18:d                                                            
+ 37:x7            37:m21:d         37:m22:s         37:m22:b                          
+ 37:x8            37:m22:d         37:m23:s         37:m23:b                          
+ 37:x9            37:m24:s         37:m24:b         37:m25:d                          
+ 38:a!            38:mp221:d       38:mn221:d       38:mp1:g         38:mn1:g         
+ 38:b!            38:mp111:d       38:mn111:d       38:mp3:g         38:mn2:g         
+ 38:f1            38:mp1:d         38:mp2:s         38:mp2:b                          
+ 38:f2            38:mp3:d         38:mp4:s         38:mp4:b                          
+ 38:f3            38:mn1:s         38:mn1:b         38:mn2:d         38:mn3:s         
+                  38:mn3:b         38:mn4:d                                           
+ 39:co!           39:m4:d          39:m5:d          39:m6:d          39:m9:d          
+                  39:m14:g         39:m15:g         39:m19:g         39:m20:g         
+ 39:s!            39:m14:d         39:m15:d         39:m23:d         39:m24:d         
+                  39:m27:g         39:m28:g                                           
+ 39:x1            39:m1:d          39:m2:d          39:m5:s          39:m5:b          
+ 39:x10           39:m25:s         39:m25:b         39:m26:d                          
+ 39:x2            39:m6:s          39:m6:b          39:m7:d          39:m8:d          
+ 39:x3            39:m3:d          39:m4:s          39:m4:b                           
+ 39:x4            39:m9:s          39:m9:b          39:m10:d                          
+ 39:x5            39:m11:d         39:m12:d         39:m13:d         39:m14:s         
+                  39:m14:b                                                            
+ 39:x6            39:m15:s         39:m15:b         39:m16:d         39:m17:d         
+                  39:m18:d                                                            
+ 39:x7            39:m21:d         39:m22:s         39:m22:b                          
+ 39:x8            39:m22:d         39:m23:s         39:m23:b                          
+ 39:x9            39:m24:s         39:m24:b         39:m25:d                          
+ 40:a!            40:mp221:d       40:mn221:d       40:mp1:g         40:mn1:g         
+ 40:b!            40:mp111:d       40:mn111:d       40:mp3:g         40:mn2:g         
+ 40:f1            40:mp1:d         40:mp2:s         40:mp2:b                          
+ 40:f2            40:mp3:d         40:mp4:s         40:mp4:b                          
+ 40:f3            40:mn1:s         40:mn1:b         40:mn2:d         40:mn3:s         
+                  40:mn3:b         40:mn4:d                                           
+ 41:co!           41:m4:d          41:m5:d          41:m6:d          41:m9:d          
+                  41:m14:g         41:m15:g         41:m19:g         41:m20:g         
+ 41:s!            41:m14:d         41:m15:d         41:m23:d         41:m24:d         
+                  41:m27:g         41:m28:g                                           
+ 41:x1            41:m1:d          41:m2:d          41:m5:s          41:m5:b          
+ 41:x10           41:m25:s         41:m25:b         41:m26:d                          
+ 41:x2            41:m6:s          41:m6:b          41:m7:d          41:m8:d          
+ 41:x3            41:m3:d          41:m4:s          41:m4:b                           
+ 41:x4            41:m9:s          41:m9:b          41:m10:d                          
+ 41:x5            41:m11:d         41:m12:d         41:m13:d         41:m14:s         
+                  41:m14:b                                                            
+ 41:x6            41:m15:s         41:m15:b         41:m16:d         41:m17:d         
+                  41:m18:d                                                            
+ 41:x7            41:m21:d         41:m22:s         41:m22:b                          
+ 41:x8            41:m22:d         41:m23:s         41:m23:b                          
+ 41:x9            41:m24:s         41:m24:b         41:m25:d                          
+ 42:a!            42:mp221:d       42:mn221:d       42:mp1:g         42:mn1:g         
+ 42:b!            42:mp111:d       42:mn111:d       42:mp3:g         42:mn2:g         
+ 42:f1            42:mp1:d         42:mp2:s         42:mp2:b                          
+ 42:f2            42:mp3:d         42:mp4:s         42:mp4:b                          
+ 42:f3            42:mn1:s         42:mn1:b         42:mn2:d         42:mn3:s         
+                  42:mn3:b         42:mn4:d                                           
+ 43:co!           43:m4:d          43:m5:d          43:m6:d          43:m9:d          
+                  43:m14:g         43:m15:g         43:m19:g         43:m20:g         
+ 43:s!            43:m14:d         43:m15:d         43:m23:d         43:m24:d         
+                  43:m27:g         43:m28:g                                           
+ 43:x1            43:m1:d          43:m2:d          43:m5:s          43:m5:b          
+ 43:x10           43:m25:s         43:m25:b         43:m26:d                          
+ 43:x2            43:m6:s          43:m6:b          43:m7:d          43:m8:d          
+ 43:x3            43:m3:d          43:m4:s          43:m4:b                           
+ 43:x4            43:m9:s          43:m9:b          43:m10:d                          
+ 43:x5            43:m11:d         43:m12:d         43:m13:d         43:m14:s         
+                  43:m14:b                                                            
+ 43:x6            43:m15:s         43:m15:b         43:m16:d         43:m17:d         
+                  43:m18:d                                                            
+ 43:x7            43:m21:d         43:m22:s         43:m22:b                          
+ 43:x8            43:m22:d         43:m23:s         43:m23:b                          
+ 43:x9            43:m24:s         43:m24:b         43:m25:d                          
+ 44:a!            44:mp221:d       44:mn221:d       44:mp1:g         44:mn1:g         
+ 44:b!            44:mp111:d       44:mn111:d       44:mp3:g         44:mn2:g         
+ 44:f1            44:mp1:d         44:mp2:s         44:mp2:b                          
+ 44:f2            44:mp3:d         44:mp4:s         44:mp4:b                          
+ 44:f3            44:mn1:s         44:mn1:b         44:mn2:d         44:mn3:s         
+                  44:mn3:b         44:mn4:d                                           
+ 45:co!           45:m4:d          45:m5:d          45:m6:d          45:m9:d          
+                  45:m14:g         45:m15:g         45:m19:g         45:m20:g         
+ 45:s!            45:m14:d         45:m15:d         45:m23:d         45:m24:d         
+                  45:m27:g         45:m28:g                                           
+ 45:x1            45:m1:d          45:m2:d          45:m5:s          45:m5:b          
+ 45:x10           45:m25:s         45:m25:b         45:m26:d                          
+ 45:x2            45:m6:s          45:m6:b          45:m7:d          45:m8:d          
+ 45:x3            45:m3:d          45:m4:s          45:m4:b                           
+ 45:x4            45:m9:s          45:m9:b          45:m10:d                          
+ 45:x5            45:m11:d         45:m12:d         45:m13:d         45:m14:s         
+                  45:m14:b                                                            
+ 45:x6            45:m15:s         45:m15:b         45:m16:d         45:m17:d         
+                  45:m18:d                                                            
+ 45:x7            45:m21:d         45:m22:s         45:m22:b                          
+ 45:x8            45:m22:d         45:m23:s         45:m23:b                          
+ 45:x9            45:m24:s         45:m24:b         45:m25:d                          
+ 46:a!            46:mp221:d       46:mn221:d       46:mp1:g         46:mn1:g         
+ 46:b!            46:mp111:d       46:mn111:d       46:mp3:g         46:mn2:g         
+ 46:f1            46:mp1:d         46:mp2:s         46:mp2:b                          
+ 46:f2            46:mp3:d         46:mp4:s         46:mp4:b                          
+ 46:f3            46:mn1:s         46:mn1:b         46:mn2:d         46:mn3:s         
+                  46:mn3:b         46:mn4:d                                           
+ 47:co!           47:m4:d          47:m5:d          47:m6:d          47:m9:d          
+                  47:m14:g         47:m15:g         47:m19:g         47:m20:g         
+ 47:s!            47:m14:d         47:m15:d         47:m23:d         47:m24:d         
+                  47:m27:g         47:m28:g                                           
+ 47:x1            47:m1:d          47:m2:d          47:m5:s          47:m5:b          
+ 47:x10           47:m25:s         47:m25:b         47:m26:d                          
+ 47:x2            47:m6:s          47:m6:b          47:m7:d          47:m8:d          
+ 47:x3            47:m3:d          47:m4:s          47:m4:b                           
+ 47:x4            47:m9:s          47:m9:b          47:m10:d                          
+ 47:x5            47:m11:d         47:m12:d         47:m13:d         47:m14:s         
+                  47:m14:b                                                            
+ 47:x6            47:m15:s         47:m15:b         47:m16:d         47:m17:d         
+                  47:m18:d                                                            
+ 47:x7            47:m21:d         47:m22:s         47:m22:b                          
+ 47:x8            47:m22:d         47:m23:s         47:m23:b                          
+ 47:x9            47:m24:s         47:m24:b         47:m25:d                          
+ 48:a!            48:mp221:d       48:mn221:d       48:mp1:g         48:mn1:g         
+ 48:b!            48:mp111:d       48:mn111:d       48:mp3:g         48:mn2:g         
+ 48:f1            48:mp1:d         48:mp2:s         48:mp2:b                          
+ 48:f2            48:mp3:d         48:mp4:s         48:mp4:b                          
+ 48:f3            48:mn1:s         48:mn1:b         48:mn2:d         48:mn3:s         
+                  48:mn3:b         48:mn4:d                                           
+ 49:co!           49:m4:d          49:m5:d          49:m6:d          49:m9:d          
+                  49:m14:g         49:m15:g         49:m19:g         49:m20:g         
+ 49:s!            49:m14:d         49:m15:d         49:m23:d         49:m24:d         
+                  49:m27:g         49:m28:g                                           
+ 49:x1            49:m1:d          49:m2:d          49:m5:s          49:m5:b          
+ 49:x10           49:m25:s         49:m25:b         49:m26:d                          
+ 49:x2            49:m6:s          49:m6:b          49:m7:d          49:m8:d          
+ 49:x3            49:m3:d          49:m4:s          49:m4:b                           
+ 49:x4            49:m9:s          49:m9:b          49:m10:d                          
+ 49:x5            49:m11:d         49:m12:d         49:m13:d         49:m14:s         
+                  49:m14:b                                                            
+ 49:x6            49:m15:s         49:m15:b         49:m16:d         49:m17:d         
+                  49:m18:d                                                            
+ 49:x7            49:m21:d         49:m22:s         49:m22:b                          
+ 49:x8            49:m22:d         49:m23:s         49:m23:b                          
+ 49:x9            49:m24:s         49:m24:b         49:m25:d                          
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=divider.pa0
+
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ .include 'mosistsmc180.lib'
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:d0      =   1.8000   0:d1      =   0.       0:d2      =   0.     
+ + 0:d3      =   1.8000   0:q0      =  10.9921n  0:q1      =  10.9921n
+ + 0:q2      =   1.8000   0:q3      =   1.8000   0:s0      =   1.8000 
+ + 0:s1      =   1.8000   0:s2      =  10.9921n  0:s3      =  10.9921n
+ + 0:s4      =  10.9921n  0:s5      =  10.9921n  0:s6      =  10.9921n
+ + 0:vdd     =   1.8000   0:z0      =   0.       0:z1      =   0.     
+ + 0:z2      =   1.8000   0:z3      =   1.8000   0:z4      =   0.     
+ + 0:z5      =   1.8000   0:z6      =   1.8000   1:m1      =  10.9921n
+ + 1:m2      =   1.8000   1:m3      =  10.9921n  1:m4      =   1.8000 
+ + 1:m5      =  10.9922n  1:m6      =   1.8000   1:m7      =  10.9921n
+ + 1:m8      =  10.9921n  1:m9      =   1.8000   1:n1      =   1.8000 
+ + 1:n10     =   1.8000   1:n11     =   1.8000   1:n12     =   1.8000 
+ + 1:n2      =   1.8000   1:n3      =   1.8000   1:n4      =  10.9921n
+ + 1:n5      =  10.9920n  1:n6      =  10.9921n  1:n7      =   1.8000 
+ + 1:n8      =   1.8000   1:n9      =  10.9921n  2:out1    =  56.9595n
+ + 3:out1    =   1.8000   4:out1    =   1.8000   5:out1    =  56.9595n
+ + 6:out1    =   1.8000   7:out1    =  54.9928n  8:out1    =  54.9928n
+ + 9:out1    =   1.8000  10:out1    =   1.8000  11:out1    =  54.9928n
+ +12:out1    =  54.9928n 13:out1    =   1.8000  14:out1    =  56.9595n
+ +15:out1    =   1.8000  16:out1    =   1.8000  17:out1    =  56.9595n
+ +18:a!      =  14.2399n 18:b!      =  14.2399n 18:f1      =   1.8000 
+ +18:f2      =   1.8000  18:f3      =  28.4797n 19:co!     =  43.2090n
+ +19:s!      =   1.8000  19:x1      =   1.8000  19:x10     =  24.0204n
+ +19:x2      =  21.6045n 19:x3      =  64.9192m 19:x4      =   8.4285f
+ +19:x5      =   1.8000  19:x6      =  12.4647n 19:x7      =   1.8000 
+ +19:x8      =   1.8000  19:x9      =   1.7394  20:a!      =  14.2399n
+ +20:b!      =   1.8000  20:f1      =   1.8000  20:f2      =   1.8000 
+ +20:f3      =  63.8120n 21:co!     =   7.4331n 21:s!      = 100.7114n
+ +21:x1      =   1.6803  21:x10     =  33.5705n 21:x2      =   2.4777n
+ +21:x3      =   1.3921  21:x4      =   3.7165n 21:x5      = 103.2639m
+ +21:x6      =   6.5484f 21:x7      =   1.6855  21:x8      = 874.0116m
+ +21:x9      =  67.1409n 22:a!      =  14.2399n 22:b!      =   1.8000 
+ +22:f1      =   1.8000  22:f2      =   1.8000  22:f3      =  63.8120n
+ +23:co!     =  43.9684n 23:s!      =   1.8000  23:x1      =   1.8000 
+ +23:x10     =   1.7204  23:x2      =  21.9842n 23:x3      =   1.8000 
+ +23:x4      =  43.9684n 23:x5      =   1.8000  23:x6      =  12.4647n
+ +23:x7      =   1.8000  23:x8      =   1.8000  23:x9      =   1.7397 
+ +24:a!      =  14.2399n 24:b!      =  14.2399n 24:f1      =   1.8000 
+ +24:f2      =   1.8000  24:f3      =  28.4797n 25:co!     =   1.8000 
+ +25:s!      =  43.9683n 25:x1      =   1.8000  25:x10     =  21.9841n
+ +25:x2      =   1.7164  25:x3      =   1.8000  25:x4      = 113.2978m
+ +25:x5      =   1.8000  25:x6      =  21.9841n 25:x7      =   1.8000 
+ +25:x8      =   1.8000  25:x9      =  43.9683n 26:a!      =   1.8000 
+ +26:b!      =  14.2399n 26:f1      =   1.8000  26:f2      =   1.8000 
+ +26:f3      =   1.7329  27:co!     =   1.8000  27:s!      =  42.9831n
+ +27:x1      =   1.8000  27:x10     =  21.4915n 27:x2      =  24.9293n
+ +27:x3      =   1.8000  27:x4      =   1.7394  27:x5      =   1.8000 
+ +27:x6      =  21.4915n 27:x7      =  84.4573m 27:x8      =  64.5524m
+ +27:x9      =  21.4915n 28:a!      =   1.8000  28:b!      =   1.8000 
+ +28:f1      =  64.9193m 28:f2      =  64.9193m 28:f3      =  27.4964n
+ +29:co!     =   1.8000  29:s!      =   1.8000  29:x1      =   1.8000 
+ +29:x10     =  32.4497m 29:x2      =  53.7500m 29:x3      =   1.8000 
+ +29:x4      = 113.2978m 29:x5      =   1.8000  29:x6      =   1.7025 
+ +29:x7      =   1.8000  29:x8      =   1.8000  29:x9      = 398.3575m
+ +30:a!      =   1.8000  30:b!      =   1.8000  30:f1      =  64.9193m
+ +30:f2      =  64.9193m 30:f3      =  27.4964n 31:co!     =   1.8000 
+ +31:s!      =  43.2092n 31:x1      =   1.8000  31:x10     =   4.2143f
+ +31:x2      =  24.9293n 31:x3      =   1.8000  31:x4      =  24.9294n
+ +31:x5      =   1.8000  31:x6      =  21.6046n 31:x7      =   1.8000 
+ +31:x8      =  64.9192m 31:x9      =  21.6046n 32:a!      =   1.8000 
+ +32:b!      =  14.2399n 32:f1      =   1.8000  32:f2      =   1.8000 
+ +32:f3      =   1.7329  33:co!     =   1.8000  33:s!      =  42.9831n
+ +33:x1      =   1.8000  33:x10     =  21.4915n 33:x2      =  24.9293n
+ +33:x3      =   1.8000  33:x4      =   1.7394  33:x5      =   1.8000 
+ +33:x6      =  21.4915n 33:x7      =  84.4573m 33:x8      =  64.5524m
+ +33:x9      =  21.4915n 34:a!      =   1.8000  34:b!      =  14.2399n
+ +34:f1      =   1.8000  34:f2      =   1.8000  34:f3      =   1.7329 
+ +35:co!     =  49.5335n 35:s!      =   1.8000  35:x1      =  88.8940m
+ +35:x10     =  24.9293n 35:x2      =   4.8311f 35:x3      =   1.3921 
+ +35:x4      =  24.7667n 35:x5      =   1.8000  35:x6      =  12.4647n
+ +35:x7      =   1.8000  35:x8      =   1.8000  35:x9      =  49.8587n
+ +36:a!      =   1.8000  36:b!      =   1.8000  36:f1      =  64.9193m
+ +36:f2      =  64.9193m 36:f3      =  27.4964n 37:co!     =  43.2091n
+ +37:s!      =   1.8000  37:x1      =   1.8000  37:x10     =  24.0204n
+ +37:x2      =  21.6045n 37:x3      =  64.9193m 37:x4      =   8.4285f
+ +37:x5      =   1.8000  37:x6      =  12.4647n 37:x7      =   1.8000 
+ +37:x8      =   1.8000  37:x9      =   1.7394  38:a!      =   1.8000 
+ +38:b!      =   1.8000  38:f1      =  64.9193m 38:f2      =  64.9193m
+ +38:f3      =  27.4964n 39:co!     =   1.8000  39:s!      =  43.9683n
+ +39:x1      =   1.8000  39:x10     =  21.9841n 39:x2      =   1.7164 
+ +39:x3      =   1.8000  39:x4      = 113.2978m 39:x5      =   1.8000 
+ +39:x6      =  21.9841n 39:x7      =   1.8000  39:x8      =   1.8000 
+ +39:x9      =  43.9683n 40:a!      =   1.8000  40:b!      =  14.2399n
+ +40:f1      =   1.8000  40:f2      =   1.8000  40:f3      =   1.7329 
+ +41:co!     =  49.5335n 41:s!      =   1.8000  41:x1      =  88.8940m
+ +41:x10     =  24.9293n 41:x2      =   4.8311f 41:x3      =   1.3921 
+ +41:x4      =  24.7667n 41:x5      =   1.8000  41:x6      =  12.4647n
+ +41:x7      =   1.8000  41:x8      =   1.8000  41:x9      =  49.8587n
+ +42:a!      =  14.2399n 42:b!      =  14.2399n 42:f1      =   1.8000 
+ +42:f2      =   1.8000  42:f3      =  28.4797n 43:co!     =  43.2090n
+ +43:s!      =   1.8000  43:x1      =   1.8000  43:x10     =  24.0204n
+ +43:x2      =  21.6045n 43:x3      =  64.9192m 43:x4      =   8.4285f
+ +43:x5      =   1.8000  43:x6      =  12.4647n 43:x7      =   1.8000 
+ +43:x8      =   1.8000  43:x9      =   1.7394  44:a!      =  14.2399n
+ +44:b!      =   1.8000  44:f1      =   1.8000  44:f2      =   1.8000 
+ +44:f3      =  63.8120n 45:co!     =  43.9684n 45:s!      =   1.8000 
+ +45:x1      =   1.8000  45:x10     =   1.7204  45:x2      =  21.9842n
+ +45:x3      =   1.8000  45:x4      =  43.9684n 45:x5      =   1.8000 
+ +45:x6      =  12.4647n 45:x7      =   1.8000  45:x8      =   1.8000 
+ +45:x9      =   1.7397  46:a!      =  14.2399n 46:b!      =   1.8000 
+ +46:f1      =   1.8000  46:f2      =   1.8000  46:f3      =  63.8120n
+ +47:co!     =  43.9684n 47:s!      =   1.8000  47:x1      =   1.8000 
+ +47:x10     =   1.7204  47:x2      =  21.9842n 47:x3      =   1.8000 
+ +47:x4      =  43.9684n 47:x5      =   1.8000  47:x6      =  12.4647n
+ +47:x7      =   1.8000  47:x8      =   1.8000  47:x9      =   1.7397 
+ +48:a!      =  14.2399n 48:b!      =  14.2399n 48:f1      =   1.8000 
+ +48:f2      =   1.8000  48:f3      =  28.4797n 49:co!     =  43.2091n
+ +49:s!      =   1.8000  49:x1      =   1.8000  49:x10     =  24.0204n
+ +49:x2      =  21.6045n 49:x3      =  64.9193m 49:x4      =   8.4285f
+ +49:x5      =   1.8000  49:x6      =  12.4647n 49:x7      =   1.8000 
+ +49:x8      =   1.8000  49:x9      =   1.7394 
+
+
+          ***** job concluded
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ .include 'mosistsmc180.lib'
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =     333 # elements   =     652
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =      12
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     640 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.08           1          22
+  transient          1.24        6401        1157         369 rev=         2
+  readin             0.16
+  errchk             0.11
+  setup              0.06
+  output             0.00
+
+
+           peak memory used         39.02 megabytes
+           total cpu time            1.66 seconds
+           total elapsed time        1.75 seconds
+           job started at     16:48:29 01/18/2016
+           job ended   at     16:48:31 01/18/2016
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.07(s)

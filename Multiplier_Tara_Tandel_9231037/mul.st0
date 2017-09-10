@@ -1,0 +1,57 @@
+***** HSPICE -- H-2013.03-SP2 64-BIT (Aug 26 2013) win64 ******
+ Input File: mul (3).sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   mahboobe             HOSTNAME: DESKTOP-7DPFJG9
+ lic: HOSTID: "240a642344ab 160a642344ab 74d02be55204 240a642344aa 08002700b885" PID:      5236
+ lic: Using FLEXlm license file:
+ lic: C:\hspice_lic\synopsys.dat
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12
+ lic: NODE LOCKED license on hostid "240a642344ab 160a642344ab 74d02be55204 240a642344aa 08002700b88
+ lic:
+ init: begin read circuit files,  cpu clock=  8.50E-02
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\behave\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\behave\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\AD\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\XILINX\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\TLINE\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\TI\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\SIGNET\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\PCI\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\LIN_TECH\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\FET\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\DIO\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\COMLINE\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\BURR_BRN\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\BJT\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\behave\
+       option search = C:\synopsys\Hspice_H-2013.03-SP2\PARTS\AD\
+       option post =     2.00
+       option runlvl
+       option post
+       option node
+ init: end read circuit files,  cpu clock=  1.01E-01 peak memory=        38 mb
+ init: begin check errors,  cpu clock=  1.01E-01
+ init: end check errors,  cpu clock=  1.38E-01 peak memory=        43 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.38E-01
+       establish matrix -- done,  cpu clock=  1.38E-01 peak memory=        43 mb
+       re-order matrix -- done,  cpu clock=  1.38E-01 peak memory=        43 mb
+ init: end setup matrix,  cpu clock=  1.38E-01 peak memory=        44 mb
+ dcop: begin dcop,  cpu clock=  1.54E-01
+ dcop: end dcop,  cpu clock=  1.85E-01 peak memory=        44 mb  tot_iter=      22
+ output: mul (3).tr0
+ sweep: tran tran0    begin, stop_t=  6.40E-08 #sweeps=6401 cpu clock=  1.85E-01
+ tran: time= 6.4677E-09 tot_iter=     190 conv_iter=      61 cpu clock= 3.37E-01
+ tran: time= 1.5326E-08 tot_iter=     196 conv_iter=      64 cpu clock= 3.38E-01
+ tran: time= 1.9380E-08 tot_iter=     226 conv_iter=      74 cpu clock= 3.54E-01
+ tran: time= 2.6468E-08 tot_iter=     360 conv_iter=     114 cpu clock= 4.39E-01
+ tran: time= 3.2486E-08 tot_iter=     364 conv_iter=     116 cpu clock= 4.55E-01
+ tran: time= 3.8886E-08 tot_iter=     368 conv_iter=     118 cpu clock= 4.55E-01
+ tran: time= 4.5286E-08 tot_iter=     372 conv_iter=     120 cpu clock= 4.55E-01
+ tran: time= 5.1686E-08 tot_iter=     376 conv_iter=     122 cpu clock= 4.55E-01
+ tran: time= 5.8086E-08 tot_iter=     380 conv_iter=     124 cpu clock= 4.55E-01
+ tran: time= 6.4000E-08 tot_iter=     384 conv_iter=     126 cpu clock= 4.55E-01
+ sweep: tran tran0    end,  cpu clock=  4.55E-01 peak memory=        44 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
